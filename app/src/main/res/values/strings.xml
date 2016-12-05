@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Demo DNIe</string>
+    <string name="logo">DNIe</string>
+    <string name="btn_login_pin">INGRESAR CON PIN</string>
+    <string name="btn_login_finger">INGRESAR CON HUELLA</string>
+    <string name="logo_slogan">AUTENTICACIÓN CON DNIe</string>
+    <string name="login_indication">Por favor, conecte su lector y DNIe.</string>
+    <string name="keyboard_text_pin">Ingrese su código PIN:</string>
+    <string name="keyboard_btn_ok">ACEPTAR</string>
+    <string name="keyboard_btn_cancel">CANCELAR</string>
+</resources>

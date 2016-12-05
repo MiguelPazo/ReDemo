@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        style="@style/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logo_slogan"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_login_pin"
+            style="@style/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleLoginPin"
+            android:text="@string/btn_login_pin" />
+
+        <Button
+            android:id="@+id/btn_login_finger"
+            style="@style/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleLoginFinger"
+            android:text="@string/btn_login_finger" />
+
+        <TextView
+            android:id="@+id/txt_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#bdbdbd"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="CARGANDO..."
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/background_popup"
+        style="@style/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/activity_main_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
