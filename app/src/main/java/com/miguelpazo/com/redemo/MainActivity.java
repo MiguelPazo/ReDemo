@@ -18,8 +18,10 @@ public class MainActivity extends BiometricsActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        The correct is without it and only use the sdk class (PeruID)
+//        oDnie = Dnie.getInstance(this);
 
-        oDnie = Dnie.getInstance(this);
+//        This is the correct flow
         oPeruID = PeruID.getInstance(this);
     }
 
