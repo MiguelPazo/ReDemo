@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CredenceDeviceLib/CredenceDeviceLib.iml" filepath="$PROJECT_DIR$/CredenceDeviceLib/CredenceDeviceLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReDemo.iml" filepath="$PROJECT_DIR$/ReDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demosdk/demosdk.iml" filepath="$PROJECT_DIR$/demosdk/demosdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/dnie/dnie.iml" filepath="$PROJECT_DIR$/dnie/dnie.iml" />
     </modules>
   </component>

@@ -5,24 +5,28 @@ import android.util.Log;
 import android.view.View;
 
 import com.credenceid.biometrics.BiometricsActivity;
+import com.example.demosdk.PeruID;
 import com.miguelpazo.com.dnie.Dnie;
 
 public class MainActivity extends BiometricsActivity {
 
     private Dnie oDnie;
+    private PeruID oPeruID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         oDnie = Dnie.getInstance(this);
+        oPeruID = PeruID.getInstance(this);
     }
 
     public void handleLoginPin(View view) {
         Log.d("-->", "handleLoginPin");
 
-        oDnie.validate(new Dnie.IValidate() {
+        oPeruID.validate(new PeruID.IValidate() {
             @Override
             public void isValid() {
                 Log.d("-->", "isValid");
@@ -43,7 +47,7 @@ public class MainActivity extends BiometricsActivity {
     public void handleLoginFinger(View view) {
         Log.d("-->", "handleLoginFinger");
 
-        oDnie.validate(new Dnie.IValidate() {
+        oPeruID.validate(new PeruID.IValidate() {
             @Override
             public void isValid() {
                 Log.d("-->", "isValid 2");

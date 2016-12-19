@@ -11,6 +11,7 @@ import com.credenceid.biometrics.BiometricsActivity;
 
 public class Dnie {
     private static Dnie __instance;
+    private final String TAG = "Dnie";
     private BiometricsActivity biometricsActivity;
 
     private Dnie(BiometricsActivity biometricsActivity) {
@@ -31,17 +32,17 @@ public class Dnie {
             public void onCardReaderOpen(Biometrics.ResultCode resultCode) {
                 if (resultCode.equals(Biometrics.ResultCode.OK)) {
                     iValidate.isValid();
-                    Log.d("-->", "Conexion OK");
+                    Log.d(TAG, "Conexion OK");
                 } else {
                     iValidate.isInvalid();
-                    Log.d("-->", "Conexion ERROR");
+                    Log.d(TAG, "Conexion ERROR");
                 }
             }
 
             @Override
             public void onCardReaderClosed(Biometrics.CloseReasonCode closeReasonCode) {
                 iValidate.close();
-                Log.d("-->", "Conexion CLOSE");
+                Log.d(TAG, "Conexion CLOSE");
             }
         });
     }

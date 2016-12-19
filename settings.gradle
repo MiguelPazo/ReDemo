@@ -1,1 +1,1 @@
-include ':app', ':dnie', ':CredenceDeviceLib'
+include ':app', ':dnie', ':CredenceDeviceLib', ':demosdk'

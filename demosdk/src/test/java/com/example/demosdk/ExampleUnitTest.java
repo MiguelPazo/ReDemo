@@ -1,4 +1,4 @@
-package com.miguelpazo.com.redemo;
+package com.example.demosdk;
 
 import org.junit.Test;
 
